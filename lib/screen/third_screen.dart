@@ -79,7 +79,7 @@ class _ThirdScreenState extends State<ThirdScreen> {
                 itemCount: isLastPage ? users.length : users.length + 1,
                 itemBuilder: (context, index) {
                   if (index == users.length) {
-                    // Use addPostFrameCallback to schedule fetchUsers after the current frame is done
+                    // untuk membuat callback fetchuser
                     SchedulerBinding.instance.addPostFrameCallback((_) {
                       fetchUsers();
                     });

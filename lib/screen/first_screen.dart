@@ -53,8 +53,7 @@ class _FirstScreenState extends State<FirstScreen> {
           Container(
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage(
-                    'assets/images/background.jpg'), // Path to your background image
+                image: AssetImage('assets/images/background.jpg'),
                 fit: BoxFit.cover,
               ),
             ),
@@ -94,7 +93,7 @@ class _FirstScreenState extends State<FirstScreen> {
                     controller: palindromeController,
                     decoration: InputDecoration(
                       filled: true,
-                      fillColor: Colors.white, // White background for input box
+                      fillColor: Colors.white,
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(15.0),
                       ),
@@ -110,13 +109,12 @@ class _FirstScreenState extends State<FirstScreen> {
                       onPressed: () {
                         setState(() {
                           checkPalindrome();
-                          showPalindromeDialog(); // Show dialog with result
+                          showPalindromeDialog(); // Show dialog untuk palindrome
                         });
                       },
                       style: ElevatedButton.styleFrom(
-                        backgroundColor:
-                            const Color(0xFF2B637B), // Color for the button
-                        minimumSize: const Size(350, 50), // Button size
+                        backgroundColor: const Color(0xFF2B637B),
+                        minimumSize: const Size(350, 50),
                       ),
                       child: const Text(
                         'CHECK',
@@ -125,7 +123,7 @@ class _FirstScreenState extends State<FirstScreen> {
                         ),
                       ),
                     ),
-                    const SizedBox(height: 10), // Space between buttons
+                    const SizedBox(height: 10),
                     ElevatedButton(
                       onPressed: () {
                         Provider.of<NameProvider>(context, listen: false)
@@ -138,9 +136,8 @@ class _FirstScreenState extends State<FirstScreen> {
                         );
                       },
                       style: ElevatedButton.styleFrom(
-                        backgroundColor:
-                            const Color(0xFF2B637B), // Color for the button
-                        minimumSize: const Size(350, 50), // Button size
+                        backgroundColor: const Color(0xFF2B637B),
+                        minimumSize: const Size(350, 50),
                       ),
                       child: const Text(
                         'NEXT',

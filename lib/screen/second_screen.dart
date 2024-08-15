@@ -47,9 +47,8 @@ class SecondScreen extends StatelessWidget {
                 );
               },
               style: ElevatedButton.styleFrom(
-                minimumSize:
-                    const Size(double.infinity, 50), // Full width button
-                backgroundColor: const Color(0xFF2B637B), // Button color
+                minimumSize: const Size(double.infinity, 50),
+                backgroundColor: const Color(0xFF2B637B),
               ),
               child: const Text(
                 'Choose a User',
